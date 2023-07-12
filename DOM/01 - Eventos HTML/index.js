@@ -1,3 +1,0 @@
-function onMouseClick () {
-  alert("Clicando...")
-}
