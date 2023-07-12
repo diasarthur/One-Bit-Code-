@@ -1,0 +1,3 @@
+function onMouseClick () {
+  alert("Clicando...")
+}
