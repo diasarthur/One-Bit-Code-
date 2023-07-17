@@ -4,8 +4,9 @@ function register(element) {
   const passConfirmation = element.children.passConfirm.value;
 
 
-  if(username.length <= 0 || password.length <= 0 || passConfirmation <=0)
-  }else if(username === password) {
+  if (username.length <= 6 || password.length <= 6 || passConfirmation <= 6) {
+    alert('O usuário e a senha devem ter 6 digitos no mínimo.')
+  } else if(username === password) {
     alert('O nome de usuário e a senha não podem ser iguais.');
     element.children.user.value = ''
     element.children.pass.value = ''
