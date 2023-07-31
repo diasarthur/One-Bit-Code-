@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rest Params</title>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <h1>Rest Params</h1>
+  <br>
+  <h2>O que são?</h2>
+  <p>
+    Os Rest Params é uma forma de passarmos quantos parâmetros quisermos para uma função.
+  </p>
+  <p>
+    Além disso, ele transforma esses parâmetros em um array, podendo assim ser manipulado de outras formas.
+  </p>
+  <p>
+    Podemos pensar em Rest Params como se eles fossem literamente o resto dos parâmetros passados ao chamar a função, e é por isso que ele deve ser o último parâmetro passado ao criar a função.
+  </p>
+  <h2>Para o que serve?</h2>
+  <p>
+    Serve em situações que gostariamos de somar todos os parâmetros, quando queremos tudo que venha depois dos parâmetros que você definiu seja excluido e afins.
+  </p>
+  <h2>Qual a sua Sintaxe?</h2>
+  <p>
+    A sua sintaxe é igual a de um operador spread (...), apenas colocarmos ele como prefixo de um parâmetro.
+    Veja:
+  </p>
+  <img src="rest-params.PNG" alt="rest params no vscode">
+  <img src="rest-params-console.PNG" alt="rest params no console.log">
+  <p>Veja que a soma deu 20 e não 21, pois ele somou apenas o que vinha do rest params, e o primeiro parâmetro não está incluido.</p>
+</body>
+</html>
