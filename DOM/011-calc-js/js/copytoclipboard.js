@@ -1,7 +1,5 @@
-
-export function clipboardCopy () {
+export function clipboardCopy (ev) {
   const resultInput = document.getElementById('result');
-  document.getElementById('copyToClipboard').addEventListener('click', function (ev) {
     const button = ev.currentTarget
     if (button.innerText === 'Copy') {
       button.innerText ='Copied!';
@@ -11,6 +9,6 @@ export function clipboardCopy () {
       button.innerText = 'Copy';
       button.classList.remove('success');
     }
-  })
 }
+
 

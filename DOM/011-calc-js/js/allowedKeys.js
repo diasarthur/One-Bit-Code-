@@ -1,10 +1,12 @@
-
+import { calculate } from "./calculate.js";
+const input = document.getElementById('input');
 
 export function validateKey () {
+
   const allowedKeys = [
     "(", ")", "/", "*", "-", "+", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0", ".", "%", " "
   ];
-
+  
   input.addEventListener('keydown', function(ev) {
     ev.preventDefault();
     if (allowedKeys.includes(ev.key)) {
@@ -20,3 +22,8 @@ export function validateKey () {
   })
 }
 
+export function handleButton (ev) {
+  const value = ev.currentTarget.dataset.value;
+  input.value += value;
+
+}
