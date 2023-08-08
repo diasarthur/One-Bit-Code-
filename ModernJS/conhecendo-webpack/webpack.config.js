@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
   entry: {
     main: './src/index.js',
@@ -7,7 +5,8 @@ module.exports = {
   mode: 'development',
   module: {
     rules: [{
-      test: /.css/
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
     }]
   }
 
