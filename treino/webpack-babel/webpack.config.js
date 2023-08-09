@@ -1,13 +1,12 @@
 module.exports = {
   entry: {
-    main: './src/index.js'
+    main: './src/index.js',
   },
   mode: 'development',
   module: {
-    rule: [{
+    rules: [{
       test: /\.css$/,
-      use: ['css-loader', 'style-loader']
+      use: ['style-loader', 'css-loader']
     }]
   }
-
-}
+  }
